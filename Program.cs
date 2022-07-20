@@ -3,7 +3,13 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-_2235 Obj = new _2235();
-int sum = Obj.Sum(12, 15);
-Console.WriteLine(sum);
+TwoSum1 Obj = new TwoSum1();
+int[] arg = { 3, 3};
+int[] output = Obj.TwoSum(arg, 6);
+foreach (var item in output)
+{
+    Console.WriteLine(item);
+}
+
+//Console.WriteLine(output[0]);
 
