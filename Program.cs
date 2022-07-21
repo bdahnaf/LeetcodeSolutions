@@ -3,9 +3,9 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1920 Obj = new P1920();
+P1929 Obj = new P1929();
 int[] arg = { 0, 2, 1, 5, 3, 4 };
-int[] output = Obj.BuildArray(arg);
+int[] output = Obj.GetConcatenation(arg);
 foreach (var item in output)
 {
     Console.WriteLine(item);
