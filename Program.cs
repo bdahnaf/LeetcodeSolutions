@@ -4,7 +4,7 @@ using LeetcodeSolutions;
 Console.WriteLine("Solved");
 
 P1108 Obj = new P1108();
-string ipAddress = "1.1.1.1";
+string ipAddress = "255.100.50.0";
 
 string output = Obj.DefangIPaddr(ipAddress);
 Console.WriteLine(output);

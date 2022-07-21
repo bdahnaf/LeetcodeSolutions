@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/defanging-an-ip-address/
  * Problem Id - 1108
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 
@@ -19,8 +19,7 @@ namespace LeetcodeSolutions
     {
         public string DefangIPaddr(string address)
         {
-            string defangedIpAddress = address;
-            return defangedIpAddress;
+            return address.Replace(".", "[.]");
         }
     }
 }
