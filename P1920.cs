@@ -8,5 +8,10 @@ namespace LeetcodeSolutions
 {
     internal class P1920
     {
+        public int[] BuildArray(int[] nums)
+        {
+            int[] ans = new int[nums.Length];
+            return ans;
+        }
     }
 }
