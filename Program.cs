@@ -3,10 +3,12 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1108 Obj = new P1108();
-string ipAddress = "255.100.50.0";
+P1470 Obj = new P1470();
 
-string output = Obj.DefangIPaddr(ipAddress);
+int[] nums = { 2, 5, 1, 3, 4, 7 };
+int n = 3;
+
+int[] output = Obj.Shuffle(nums, n);
 Console.WriteLine(output);
 //Console.WriteLine(output[0]);
 
