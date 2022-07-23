@@ -5,9 +5,10 @@ Console.WriteLine("Solved");
 
 P2011 Obj = new P2011();
 
-string[] operations = { "--X", "X++", "X++" };
+string[] operations = { "++X", "++X", "X++" };
 
 int output = Obj.FinalValueAfterOperations(operations);
+Console.WriteLine(output);
 //foreach (int i in output)
 //{
 //    Console.WriteLine(i);
