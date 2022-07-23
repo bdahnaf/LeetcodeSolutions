@@ -3,12 +3,11 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1470 Obj = new P1470();
+P2011 Obj = new P2011();
 
-int[] nums = { 2, 5, 1, 3, 4, 7 };
-int n = 3;
+string[] operations = { "--X", "X++", "X++" };
 
-int[] output = Obj.Shuffle(nums, n);
+int output = Obj.FinalValueAfterOperations(operations);
 //foreach (int i in output)
 //{
 //    Console.WriteLine(i);
