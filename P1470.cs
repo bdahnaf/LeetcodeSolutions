@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/shuffle-the-array/
  * Problem Id - 1470
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 using System;
@@ -18,14 +18,12 @@ namespace LeetcodeSolutions
     {
         public int[] Shuffle(int[] nums, int n)
         {
-            int[] ans = new int[n];
+            int[] ans = new int[2 * n];
             int arrayIndex = 0;
-            for(int i = 0; i < 2 * n; i++)
+            for(int i = 0; i < n; i++)
             {
-                //ans[arrayIndex] = nums[i];
-                //ans[arrayIndex + 1] = nums[i + n - 1];
-                Console.WriteLine(arrayIndex);
-                Console.WriteLine(arrayIndex + 1);
+                ans[arrayIndex] = nums[i];
+                ans[arrayIndex + 1] = nums[i + n];
                 arrayIndex = arrayIndex + 2;
             }
             return ans;
