@@ -3,27 +3,9 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1773 Obj = new P1773();
-
-IList<IList<string>> items = new List<IList<string>>()
-{
-    new List<string>()
-    {
-        "phone","blue","pixel"
-    },
-    new List<string>()
-    {
-        "computer","silver","phone"
-    },
-    new List<string>()
-    {
-        "phone","gold","iphone"
-    }
-};
-string ruleKey = "type";
-string ruleValue = "phone";
-
-int output = Obj.CountMatches(items, ruleKey, ruleValue);
+P1281 Obj = new P1281();
+int num = 234;
+int output = Obj.SubtractProductAndSum(num);
 Console.WriteLine(output);
 //foreach (int i in output)
 //{
