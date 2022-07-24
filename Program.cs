@@ -13,15 +13,15 @@ IList<IList<string>> items = new List<IList<string>>()
     },
     new List<string>()
     {
-        "computer","silver","lenovo"
+        "computer","silver","phone"
     },
     new List<string>()
     {
         "phone","gold","iphone"
     }
 };
-string ruleKey = "color";
-string ruleValue = "silver";
+string ruleKey = "type";
+string ruleValue = "phone";
 
 int output = Obj.CountMatches(items, ruleKey, ruleValue);
 Console.WriteLine(output);
