@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
  * Problem Id - 1281
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 using System;
@@ -19,6 +19,17 @@ namespace LeetcodeSolutions
         public int SubtractProductAndSum(int n)
         {
             int ans = 0;
+            int sum = 0;
+            int product = 1;
+            int digit = 0;
+            while ( n > 0)
+            {
+                digit = n % 10;
+                n = n / 10;
+                product = product * digit;
+                sum = sum + digit;
+            }
+            ans = product - sum;
             return ans;
 
         }
