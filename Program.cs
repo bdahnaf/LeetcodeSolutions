@@ -3,11 +3,27 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P2011 Obj = new P2011();
+P1773 Obj = new P1773();
 
-string[] operations = { "++X", "++X", "X++" };
+IList<IList<string>> items = new List<IList<string>>()
+{
+    new List<string>()
+    {
+        "phone","blue","pixel"
+    },
+    new List<string>()
+    {
+        "computer","silver","lenovo"
+    },
+    new List<string>()
+    {
+        "phone","gold","iphone"
+    }
+};
+string ruleKey = "color";
+string ruleValue = "silver";
 
-int output = Obj.FinalValueAfterOperations(operations);
+int output = Obj.CountMatches(items, ruleKey, ruleValue);
 Console.WriteLine(output);
 //foreach (int i in output)
 //{
