@@ -4,7 +4,7 @@ using LeetcodeSolutions;
 Console.WriteLine("Solved");
 
 P1480 Obj = new P1480();
-int[] nums = {1, 2, 3, 4};
+int[] nums = { 3, 1, 2, 10, 1 };
 int[] output = Obj.RunningSum(nums);
 foreach (int i in output)
 {
