@@ -3,11 +3,9 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1480 Obj = new P1480();
-int[] nums = { 3, 1, 2, 10, 1 };
-int[] output = Obj.RunningSum(nums);
-foreach (int i in output)
-{
-    Console.WriteLine(i);
-}
+P35 Obj = new P35();
+int[] nums = { 1, 3, 5, 6 };
+int target = 0;
+int output = Obj.SearchInsert(nums, target);
+Console.WriteLine(output);
 
