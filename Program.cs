@@ -3,9 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P136 Obj = new P136();
-int[] nums = { 1 };
+P28 Obj = new P28();
+string haystack = "hello";
+string needle = "ll";
 
-int output = Obj.SingleNumber(nums);
+int output = Obj.StrStr(haystack, needle);
 Console.WriteLine(output);
 
