@@ -3,9 +3,9 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P136 Obj = new P136();
-int[] nums = { 1 };
+P14 Obj = new P14();
+string[] strs = { "flower", "flow", "flight" };
 
-int output = Obj.SingleNumber(nums);
+string output = Obj.LongestCommonPrefix(strs);
 Console.WriteLine(output);
 
