@@ -5,7 +5,7 @@ Console.WriteLine("Solved");
 
 P28 Obj = new P28();
 string haystack = "hello";
-string needle = "ll";
+string needle = "lo";
 
 int output = Obj.StrStr(haystack, needle);
 Console.WriteLine(output);
