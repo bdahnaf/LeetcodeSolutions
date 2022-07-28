@@ -3,9 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P14 Obj = new P14();
-string[] strs = { "flower", "flow", "flight" };
+P1528 Obj = new P1528();
+string s = "codeleet";
+int[] indices = { 4, 5, 6, 7, 0, 2, 1, 3 };
 
-string output = Obj.LongestCommonPrefix(strs);
+string output = Obj.RestoreString(s, indices);
 Console.WriteLine(output);
 
