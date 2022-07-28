@@ -1,4 +1,14 @@
-﻿using System;
+﻿/**
+ * 
+ * Problem URL - https://leetcode.com/problems/shuffle-string/submissions/
+ * Problem Id - 1528
+ * Author - Ahnaf Shahriar
+ * Status - Accepted
+ * 
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
