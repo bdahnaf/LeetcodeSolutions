@@ -3,10 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1528 Obj = new P1528();
-string s = "codeleet";
-int[] indices = { 4, 5, 6, 7, 0, 2, 1, 3 };
+P28 Obj = new P28();
+string haystack = "hello";
+string needle = "ll";
 
-string output = Obj.RestoreString(s, indices);
+int output = Obj.StrStr(haystack, needle);
 Console.WriteLine(output);
 
