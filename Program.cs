@@ -4,7 +4,7 @@ using LeetcodeSolutions;
 Console.WriteLine("Solved");
 
 P1512 Obj = new P1512();
-int[] nums = { 1, 2, 3, 1, 1, 3 };
+int[] nums = { 1, 1, 1, 1 };
 
 
 int output = Obj.NumIdenticalPairs(nums);
