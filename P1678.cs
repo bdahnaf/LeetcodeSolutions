@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/goal-parser-interpretation/
  * Problem Id - 1678
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 
