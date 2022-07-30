@@ -3,10 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1678 Obj = new P1678();
-string command = "(al)G(al)()()G";
+P1512 Obj = new P1512();
+int[] nums = { 1, 2, 3, 1, 1, 3 };
 
 
-string output = Obj.Interpret(command);
+int output = Obj.NumIdenticalPairs(nums);
 Console.WriteLine(output);
 
