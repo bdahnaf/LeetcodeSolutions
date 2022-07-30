@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/number-of-good-pairs/
  * Problem Id - 1512
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 
