@@ -20,6 +20,27 @@ namespace LeetcodeSolutions
         public string Interpret(string command)
         {
             string ans = "";
+            for(int i = 0; i < command.Length; i++)
+            {
+                if (command[i] == 'G')
+                {
+                    Console.WriteLine("G found");
+                } 
+                else if (command[i] == '(')
+                {
+                    if(command[i+1] == ')')
+                    {
+                        Console.WriteLine("o found");
+                        i++;
+                    }
+                    else if (command[i+1] == 'a')
+                    {
+                        Console.WriteLine("al found");
+                        i = i + 3;
+                    }
+                }
+                //Console.WriteLine(command[i]);
+            }
             return ans;
         }
     }
