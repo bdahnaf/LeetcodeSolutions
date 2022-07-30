@@ -24,22 +24,21 @@ namespace LeetcodeSolutions
             {
                 if (command[i] == 'G')
                 {
-                    Console.WriteLine("G found");
+                    ans += 'G';
                 } 
                 else if (command[i] == '(')
                 {
                     if(command[i+1] == ')')
                     {
-                        Console.WriteLine("o found");
+                        ans += 'o';
                         i++;
                     }
                     else if (command[i+1] == 'a')
                     {
-                        Console.WriteLine("al found");
+                        ans += "al";
                         i = i + 3;
                     }
                 }
-                //Console.WriteLine(command[i]);
             }
             return ans;
         }

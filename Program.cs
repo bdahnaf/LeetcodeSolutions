@@ -4,7 +4,7 @@ using LeetcodeSolutions;
 Console.WriteLine("Solved");
 
 P1678 Obj = new P1678();
-string command = "G()(al)";
+string command = "(al)G(al)()()G";
 
 
 string output = Obj.Interpret(command);
