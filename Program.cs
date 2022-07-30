@@ -3,10 +3,14 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P28 Obj = new P28();
-string haystack = "hello";
-string needle = "ll";
+P1365 Obj = new P1365();
+int[] nums = { 7, 7, 7, 7 };
 
-int output = Obj.StrStr(haystack, needle);
-Console.WriteLine(output);
+
+int[] output = Obj.SmallerNumbersThanCurrent(nums);
+foreach (int num in output)
+{
+    Console.WriteLine(num);
+}
+//Console.WriteLine(output);
 
