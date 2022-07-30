@@ -3,14 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1365 Obj = new P1365();
-int[] nums = { 7, 7, 7, 7 };
+P1678 Obj = new P1678();
+string command = "G()(al)";
 
 
-int[] output = Obj.SmallerNumbersThanCurrent(nums);
-foreach (int num in output)
-{
-    Console.WriteLine(num);
-}
-//Console.WriteLine(output);
+string output = Obj.Interpret(command);
+Console.WriteLine(output);
 
