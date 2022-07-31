@@ -20,6 +20,11 @@ namespace LeetcodeSolutions
         public int[] CreateTargetArray(int[] nums, int[] index)
         {
             int[] ans = new int[nums.Length];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.WriteLine("Inserting at " + index[i] + " Value = " + nums[i]);
+                ans[index[i]] = nums[i];
+            }
             return ans;
         }
     }
