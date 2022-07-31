@@ -20,6 +20,32 @@ namespace LeetcodeSolutions
         public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
         {
             IList<bool> kids = new List<bool>();
+            int flag = 0;
+            for (int i = 0; i < candies.Length; i++)
+            {
+                for (int j = 0; j < candies.Length; j++)
+                {
+                    if ((candies[i] + extraCandies) <= candies[j])
+                    {
+                        //kids.Add(false);
+                        flag = 0;
+                    }
+                    else
+                    {
+                        //kids.Add(true);
+                        flag = 1;
+                    }
+                }
+                if(flag == 0)
+                {
+                    kids.Add(false);
+                }
+                else
+                {
+                    kids.Add(true);
+                }
+                flag = 0;
+            }
             return kids;
         }
     }
