@@ -3,11 +3,11 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1431 Obj = new P1431();
-int[] candies = { 4, 2, 1, 1, 2 };
-int extraCandies = 1;
-IList<bool> output = new List<bool>();
-output = Obj.KidsWithCandies(candies, extraCandies);
+P1389 Obj = new P1389();
+int[] nums = { 0, 1, 2, 3, 4 };
+int[] index = { 0, 1, 2, 2, 1 };
+
+int[] output = Obj.CreateTargetArray(nums, index);
 foreach(object obj in output)
 {
     Console.WriteLine(obj);
