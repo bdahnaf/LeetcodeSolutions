@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
  * Problem Id - 1431
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 
@@ -25,15 +25,14 @@ namespace LeetcodeSolutions
             {
                 for (int j = 0; j < candies.Length; j++)
                 {
-                    if ((candies[i] + extraCandies) <= candies[j])
+                    if ((candies[i] + extraCandies) >= candies[j])
                     {
-                        //kids.Add(false);
-                        flag = 0;
+                        flag = 1;
                     }
                     else
                     {
-                        //kids.Add(true);
-                        flag = 1;
+                        flag = 0;
+                        break;
                     }
                 }
                 if(flag == 0)

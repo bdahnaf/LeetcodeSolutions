@@ -4,8 +4,8 @@ using LeetcodeSolutions;
 Console.WriteLine("Solved");
 
 P1431 Obj = new P1431();
-int[] candies = { 2, 3, 5, 1, 3 };
-int extraCandies = 3;
+int[] candies = { 4, 2, 1, 1, 2 };
+int extraCandies = 1;
 IList<bool> output = new List<bool>();
 output = Obj.KidsWithCandies(candies, extraCandies);
 foreach(object obj in output)
