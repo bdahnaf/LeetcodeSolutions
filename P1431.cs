@@ -17,33 +17,53 @@ namespace LeetcodeSolutions
 {
     internal class P1431
     {
+        //public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
+        //{
+        //    IList<bool> kids = new List<bool>();
+        //    int flag = 0;
+        //    for (int i = 0; i < candies.Length; i++)
+        //    {
+        //        for (int j = 0; j < candies.Length; j++)
+        //        {
+        //            if ((candies[i] + extraCandies) >= candies[j])
+        //            {
+        //                flag = 1;
+        //            }
+        //            else
+        //            {
+        //                flag = 0;
+        //                break;
+        //            }
+        //        }
+        //        if(flag == 0)
+        //        {
+        //            kids.Add(false);
+        //        }
+        //        else
+        //        {
+        //            kids.Add(true);
+        //        }
+        //        flag = 0;
+        //    }
+        //    return kids;
+        //}
+        /**
+         * Alternate Solution
+         * Greedy approach
+         */
         public IList<bool> KidsWithCandies(int[] candies, int extraCandies)
         {
             IList<bool> kids = new List<bool>();
-            int flag = 0;
-            for (int i = 0; i < candies.Length; i++)
+            int maxArrayValue = candies.Max();
+            for(int i = 0; i < candies.Length; i++)
             {
-                for (int j = 0; j < candies.Length; j++)
+                if ((candies[i] + extraCandies) >= maxArrayValue)
                 {
-                    if ((candies[i] + extraCandies) >= candies[j])
-                    {
-                        flag = 1;
-                    }
-                    else
-                    {
-                        flag = 0;
-                        break;
-                    }
-                }
-                if(flag == 0)
+                    kids.Add(true);
+                } else
                 {
                     kids.Add(false);
                 }
-                else
-                {
-                    kids.Add(true);
-                }
-                flag = 0;
             }
             return kids;
         }
