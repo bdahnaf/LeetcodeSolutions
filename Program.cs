@@ -3,14 +3,15 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1431 Obj = new P1431();
-int[] candies = { 4, 2, 1, 1, 2 };
-int extraCandies = 1;
-IList<bool> output = new List<bool>();
-output = Obj.KidsWithCandies(candies, extraCandies);
-foreach(object obj in output)
-{
-    Console.WriteLine(obj);
-}
-//Console.WriteLine(output);
+P1351 Obj = new P1351();
+//int[,] grid = { { 4, 3, 2, -1 }, { 3, 2, 1, -1 }, { 1, 1, -1, -2 }, { -1, -1, -2, -3 } };
+int[,] grid = { { 3, 2}, { 1, 0 } };
+int[][] grid2 = new int[2][];
+
+int output = Obj.CountNegatives(grid2);
+//foreach(object obj in output)
+//{
+//    Console.WriteLine(obj);
+//}
+Console.WriteLine(output);
 
