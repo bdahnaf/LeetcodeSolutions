@@ -3,7 +3,7 @@
  * Problem URL - https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
  * Problem Id - 1662
  * Author - Ahnaf Shahriar
- * Status - Trying
+ * Status - Accepted
  * 
  */
 
