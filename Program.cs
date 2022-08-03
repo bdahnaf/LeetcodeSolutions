@@ -3,10 +3,10 @@ using LeetcodeSolutions;
 
 Console.WriteLine("Solved");
 
-P1662 Obj = new P1662();
-string[] word1 = { "a", "cb" };
-string[] word2 = { "ab", "c" };
+P1816 Obj = new P1816();
+string s = "Hello how are you Contestant";
+int k = 4;
 
-bool output = Obj.ArrayStringsAreEqual(word1, word2);
+string output = Obj.TruncateSentence(s, k);
 Console.WriteLine(output);
 
